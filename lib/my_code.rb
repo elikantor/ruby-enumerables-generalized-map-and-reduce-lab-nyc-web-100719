@@ -20,8 +20,8 @@ def reduce(source_array, starting_point = 0)
   result = starting_point
   
   while i < source_array.length 
-
-    result += source_array[i]
+    yield source_array[i]
+    yield result += source_array[i]
     
     i += 1 
   end
