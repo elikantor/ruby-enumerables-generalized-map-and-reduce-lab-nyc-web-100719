@@ -17,7 +17,10 @@ end
 def reduce(source_array, starting_point = nil)
   
   i = 0 
-  result = starting_point
+  
+    if !!starting_point
+      result = starting_point
+    end
   
   while i < source_array.length 
 
