@@ -20,6 +20,9 @@ def reduce(source_array, starting_point = nil)
   
     if !!starting_point
       result = starting_point
+    elsif !starting_point
+      result = source_array[i]
+      i += 1 
     end
   
   while i < source_array.length 
