@@ -4,7 +4,7 @@ def map(array)
   newarr = []
   
   while i < array.length 
-    newarr << (array[i] * -1)
+    newarr << (array[i])
     
     i += 1 
   end 
